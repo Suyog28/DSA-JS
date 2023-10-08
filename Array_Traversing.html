@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Traversing</title>
+  </head>
+  <body>
+    <input type="text" id="data" />
+    <button onclick="getElement()">Get Element</button>
+  </body>
+  <script>
+    const data = [2, 34, 56, 3, 45, 6, 443, 556, 646, 342, 1];
+
+    for (let i = 0; i < data.length; i++) {
+      document.write(`Array ${[i]} is ${data[i]} </br>`);
+    }
+
+    // console.log(input);
+    function getElement() {
+      const input = document.querySelector("#data").value;
+
+      if (input < data.length && typeof parseInt(el) === "number") {
+        alert(data[input]);
+      } else {
+        alert("Enter Valid Number");
+      }
+    }
+  </script>
+</html>
