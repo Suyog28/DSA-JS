@@ -13,18 +13,17 @@
     const data = [2, 34, 56, 3, 45, 6, 443, 556, 646, 342, 1];
 
     for (let i = 0; i < data.length; i++) {
-      document.write(`Array ${[i]} is ${data[i]} </br>`);
+      document.write(`Array of ${i} is ${data[i]} </br>`);
     }
 
-    // console.log(input);
     function getElement() {
-      const input = document.querySelector("#data").value;
-
-      if (input < data.length && typeof parseInt(el) === "number") {
+      const input = document.getElementById("data").value;
+      if (input < data.length) {
         alert(data[input]);
-      } else {
-        alert("Enter Valid Number");
+      } else if (typeof input !== "number") {
+        alert("String not alloed, Please Enter number ");
       }
+      alert("Enter Valid range");
     }
   </script>
 </html>
