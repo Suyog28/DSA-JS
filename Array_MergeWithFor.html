@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge Two Array with For Loop</title>
+</head>
+<body>
+    <script>
+        const arr1 = [20,30,49,40,5];
+        const arr2 = [29,394,239,33,453];
+
+        //JS methos
+
+        //Array merge
+         const newArr = [...arr1,...arr2]
+
+         
+         //Reverse the given array
+         
+        //  newArr.reverse()
+         
+        // console.log(newArr)
+        
+
+        //for loop method 
+
+        let arr3 = [];
+        for(let i=0; i<arr1.length; i++){
+         arr3.push(arr1[i])
+        }
+
+        for(let i=0; i<arr2.length;i++){
+            arr3.push(arr2[i])
+        }
+
+        console.log(arr3)
+        
+    </script>
+</body>
+</html>
