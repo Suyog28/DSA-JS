@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Element in Array</title>
+</head>
+<body>
+
+    <input type="text" name="" id="element"/>
+    <button  onclick="findHandle()" > Find</button>
+
+    
+    <script>
+        const data = [30,32,304,20,10,203,40,23]
+
+        // let element = 20;
+        // let index ;
+
+        // for(let i=0; i<data.length; i++){
+        //     if(data[i] == element){
+        //         index = i
+        //         console.log(index)
+        //     }
+        // }
+
+        function findHandle(){
+            const ele = document.getElementById("element").value; 
+           let element = ele;
+        let index ;
+
+        for(let i=0; i<data.length; i++){
+            if(data[i] == element){
+                index = i
+                console.log(index)
+            }
+        } 
+        }
+
+        // console.log(data.indexOf(20));
+
+    </script>
+</body>
+</html>
