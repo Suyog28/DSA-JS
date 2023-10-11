@@ -6,20 +6,33 @@
     <title>Delete the Element from an array</title>
   </head>
   <body>
+    <input type="text" name="" id="position" />
+    <button onclick="removeHandle()">Delete Element</button>
     <script>
       let data = [20, 39, 40, 60, 90, 10, 28];
       //   data.splice(2, 1);
       //   console.log(data);
 
-      const position = 2;
+      //   const position = 2;
 
-      for (let i = position; i < data.length - 1; i++) {
-        data[i] = data[i + 1];
+      //   for (let i = position; i < data.length - 1; i++) {
+      //     data[i] = data[i + 1];
+      //   }
+      //   //   data.length = data.length - 1;
+      //   data.pop();
+
+      //   console.log(data);
+
+      function removeHandle() {
+        let position = document.querySelector("#position").value;
+        position = parseInt(position);
+        for (let i = position; i < data.length - 1; i++) {
+          data[i] = data[i + 1];
+        }
+        data.length = data.length - 1;
+        // data.pop();
+        document.write(data);
       }
-      //   data.length = data.length - 1;
-      data.pop();
-
-      console.log(data);
     </script>
   </body>
 </html>
